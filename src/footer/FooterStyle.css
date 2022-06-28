@@ -1,0 +1,38 @@
+.footer {
+    width: 100%;
+    padding-top: 4px;
+    background: url(../assets/footer.jpg) no-repeat center center/cover;
+}
+
+.footer .container {
+    display: grid;
+    max-width: 1240px;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+}
+.footer .container .col {
+    display: grid;
+    justify-content: center;
+}
+.footer p {
+    color : #ccc;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: .4rem;
+    margin-right: 8.5rem;
+}
+
+.footer  .icons {
+    font-size: 2rem;
+    color: orange;
+    margin: .5rem 1rem 0 0 ;
+}
+@media screen and (max-width:1040px) {
+    .footer .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer .container .col {
+        justify-content: start;
+    }
+}
